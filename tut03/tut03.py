@@ -1,3 +1,8 @@
+import os
+
+os.mkdir('output_individual_roll')
+os.mkdir('output_by_subject')
+
 with open('regtable_old.csv', 'r') as file:
 
     memory = []
@@ -50,3 +55,4 @@ with open('regtable_old.csv', 'r') as file:
             with open(path, 'w') as f:
                 f.write('rollno,' + 'register_sem,' + 'subno,' + 'sub_type\n')
                 f.write(rollno + ',' + register_sem + ',' + subno + ',' + sub_type)
+
